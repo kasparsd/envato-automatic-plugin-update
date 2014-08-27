@@ -16,9 +16,7 @@ In your plugin, attach an action to `plugins_loaded`:
 
 		include plugin_dir_path( __FILE__ ) . 'lib/envato-plugin-update.php';
 
-		$updater = PresetoPluginUpdateEnvato::instance();
-
-		$updater->add_item( array(
+		PresetoPluginUpdateEnvato::instance()->add_item( array(
 				'id' => NNNNNNN,
 				'basename' => plugin_basename( __FILE__ )
 			) );
