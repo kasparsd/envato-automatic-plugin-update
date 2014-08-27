@@ -1,0 +1,32 @@
+{
+    "name": "kasparsd/envato-automatic-plugin-update",
+    "description": "WordPress plugin library for providing automatic plugin updates to CodeCanyon plugins",
+    "homepage": "https://github.com/kasparsd/envato-automatic-plugin-update",
+    "keywords": [
+        "WordPress", 
+        "updates",
+        "plugins",
+        "library"
+    ],
+    "support": {
+        "issues": "https://github.com/kasparsd/envato-automatic-plugin-update/issues",
+        "source": "https://github.com/kasparsd/envato-automatic-plugin-update"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Kaspars Dambis",
+            "email": "hi@kaspars.net",
+            "homepage": "http://kaspars.net",
+        }
+    ],
+    "type": "library",
+    "require": {
+
+    },
+    "autoload": {
+        "files": [
+            "envato-plugin-update.php"
+        ]
+    }
+}
