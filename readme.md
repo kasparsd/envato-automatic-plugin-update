@@ -14,8 +14,7 @@ In your plugin, attach an action to `plugins_loaded`:
 
 	function my_envato_updates_init() {
 
-		if ( ! class_exists( 'PresetoPluginUpdateEnvato' ) )
-			include plugin_dir_path( __FILE__ ) . 'lib/envato-plugin-update.php';
+		include plugin_dir_path( __FILE__ ) . 'lib/envato-plugin-update.php';
 
 		$updater = PresetoPluginUpdateEnvato::instance();
 
