@@ -1,7 +1,7 @@
 <?php
 
 // Make sure that all dependencies are met
-if ( class_exists( 'Envato_Protected_API' ) && ! class_exists( 'PresetoPluginUpdateEnvato' ) ) :
+if ( ! class_exists( 'PresetoPluginUpdateEnvato' ) ) :
 
 class PresetoPluginUpdateEnvato {
 
@@ -12,6 +12,9 @@ class PresetoPluginUpdateEnvato {
 
 
 	private function __construct() {
+
+		if ( ! class_exists( 'Envato_Protected_API' ) )
+			return;
 
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
 
