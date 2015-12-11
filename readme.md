@@ -2,9 +2,11 @@
 
 This is a library for WordPress plugin developers who sell their plugins on [CodeCanyon](http://codecanyon.net/?ref=Preseto) and would like to provide automatic plugin updates to their users.
 
+
 ## Requirements
 
 User must install the [Envato WordPress Toolkit](https://github.com/envato/envato-wordpress-toolkit) plugin.
+
 
 ## Instructions
 
@@ -24,12 +26,13 @@ In your plugin, attach an action to `plugins_loaded`:
 	}
 
 where the `id` is the product ID of your plugin. For example, the product ID of this plugin:
-	
-	http://codecanyon.net/item/storage-for-contact-form-7-/7806229 
+
+	http://codecanyon.net/item/storage-for-contact-form-7-/7806229
 
 is
 
 	7806229
+
 
 ## Example
 
